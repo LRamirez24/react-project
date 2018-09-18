@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import { Navbar, NavbarBrand } from 'reactstrap';
 import Menu from './components/menuComponent';
+import Detail from './components/detail';
 import './App.css';
 import { DISHES } from './shared/dishes';
 
@@ -24,6 +25,7 @@ class App extends Component {
       </div>
       </Navbar>
       <Menu dishes={this.state.dishes} />
+      <Detail dishes={this.state.dishes} />
       </div>
     );
   }
